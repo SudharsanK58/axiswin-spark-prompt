@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import trainingClassroom from "@/assets/training-classroom.jpg";
 import trainingHandsOn from "@/assets/training-hands-on.jpg";
 import trainingAcademic from "@/assets/training-academic.jpg";
+import trainingCorporate from "@/assets/training-corporate.png";
 
 const Training = () => {
   const scrollToContact = () => {
@@ -26,11 +27,11 @@ const Training = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {/* Main Image */}
+          {/* Main Image - Corporate Training Photos */}
           <div className="lg:col-span-2 relative overflow-hidden rounded-2xl shadow-elegant animate-fade-in">
             <img 
-              src={trainingClassroom} 
-              alt="Professional corporate training session for embedded systems"
+              src={trainingCorporate} 
+              alt="Corporate training sessions at Bosch and other industry partners"
               className="w-full h-[400px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/50 to-transparent flex items-end">
