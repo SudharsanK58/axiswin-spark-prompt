@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import logo from "@/assets/logo.gif";
-import trainingClassroom from "@/assets/training-classroom-real.jpg";
+import trainingHandsOn from "@/assets/training-hands-on.jpg";
 
 const Training = () => {
   const scrollToContact = () => {
@@ -23,22 +22,13 @@ const Training = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 items-center">
-          {/* Logo */}
-          <div className="flex justify-center lg:justify-start animate-fade-in">
-            <img 
-              src={logo} 
-              alt="Axiswin Technologies Logo"
-              className="w-64 h-64 object-contain"
-            />
-          </div>
-
+        <div className="mb-12 animate-fade-in">
           {/* Training Photo */}
-          <div className="relative overflow-hidden rounded-2xl shadow-elegant animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <div className="relative overflow-hidden rounded-2xl shadow-elegant">
             <img 
-              src={trainingClassroom} 
-              alt="Corporate and academic training sessions at Axiswin Technologies"
-              className="w-full h-full object-cover"
+              src={trainingHandsOn} 
+              alt="Corporate and academic hands-on training sessions"
+              className="w-full h-[500px] object-cover"
             />
           </div>
         </div>
