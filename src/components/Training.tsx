@@ -1,9 +1,27 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import trainingHandsOn from "@/assets/training-hands-on.jpg";
 import trainingClassroom from "@/assets/training-classroom.jpg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Training = () => {
+  const trainingImages = [
+    {
+      src: trainingHandsOn,
+      alt: "Corporate and academic hands-on training with embedded systems and IoT devices"
+    },
+    {
+      src: trainingClassroom,
+      alt: "Academic classroom training sessions for students"
+    }
+  ];
+
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -23,24 +41,30 @@ const Training = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {/* Hands-on Training Photo */}
-          <div className="relative overflow-hidden rounded-2xl shadow-elegant animate-fade-in">
-            <img 
-              src={trainingHandsOn} 
-              alt="Corporate and academic hands-on training with embedded systems and IoT devices"
-              className="w-full h-[400px] object-cover"
-            />
-          </div>
-          
-          {/* Classroom Training Photo */}
-          <div className="relative overflow-hidden rounded-2xl shadow-elegant animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <img 
-              src={trainingClassroom} 
-              alt="Academic classroom training sessions for students"
-              className="w-full h-[400px] object-cover"
-            />
-          </div>
+        <div className="mb-12 max-w-4xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {trainingImages.map((image, index) => (
+                <CarouselItem key={index}>
+                  <div className="relative overflow-hidden rounded-2xl shadow-elegant">
+                    <img 
+                      src={image.src} 
+                      alt={image.alt}
+                      className="w-full h-[500px] object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
         </div>
 
         {/* Training Features */}
