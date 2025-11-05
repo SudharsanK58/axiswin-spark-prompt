@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import trainingHandsOn from "@/assets/training-hands-on.jpg";
+import trainingClassroom from "@/assets/training-classroom.jpg";
 
 const Training = () => {
   const scrollToContact = () => {
@@ -22,13 +23,22 @@ const Training = () => {
           </p>
         </div>
 
-        <div className="mb-12 animate-fade-in">
-          {/* Training Photo */}
-          <div className="relative overflow-hidden rounded-2xl shadow-elegant">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          {/* Hands-on Training Photo */}
+          <div className="relative overflow-hidden rounded-2xl shadow-elegant animate-fade-in">
             <img 
               src={trainingHandsOn} 
-              alt="Corporate and academic hands-on training sessions"
-              className="w-full h-[500px] object-cover"
+              alt="Corporate and academic hands-on training with embedded systems and IoT devices"
+              className="w-full h-[400px] object-cover"
+            />
+          </div>
+          
+          {/* Classroom Training Photo */}
+          <div className="relative overflow-hidden rounded-2xl shadow-elegant animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            <img 
+              src={trainingClassroom} 
+              alt="Academic classroom training sessions for students"
+              className="w-full h-[400px] object-cover"
             />
           </div>
         </div>
