@@ -22,7 +22,7 @@ const Navbar = () => {
             <img 
               src={logo} 
               alt="Axiswin Technologies Logo" 
-              className="h-12 w-12 object-contain"
+              className="h-16 w-16 object-contain"
             />
             <h1 className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
               Axiswin Technologies
