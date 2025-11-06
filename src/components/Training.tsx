@@ -67,6 +67,15 @@ const Training = () => {
           </Carousel>
         </div>
 
+        {/* Training Description */}
+        <div className="max-w-4xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Empower your team with our Corporate Training Programs in Embedded Mobility and Embedded Automotive Systems. 
+            Gain hands-on expertise in Device Driver Development using advanced ARM Cortex processors, Real-Time Task Scheduling 
+            with FreeRTOS, Communication Protocol Design, and AI Model Development with Hardware Deployment.
+          </p>
+        </div>
+
         {/* Training Features */}
         <div className="bg-card border border-border rounded-2xl p-8 shadow-elegant animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
