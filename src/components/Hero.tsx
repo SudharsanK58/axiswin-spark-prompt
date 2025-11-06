@@ -31,7 +31,7 @@ const Hero = () => {
               Future of IoT
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl text-justify">
             From embedded systems to AI-powered edge computing, we deliver cutting-edge solutions that transform ideas into intelligent products.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

@@ -36,7 +36,7 @@ const Training = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Corporate & <span className="bg-gradient-hero bg-clip-text text-transparent">Academic Training</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-justify">
             Comprehensive hands-on training programs designed to upskill your team in embedded systems, IoT, and AI technologies
           </p>
         </div>
@@ -69,7 +69,7 @@ const Training = () => {
 
         {/* Training Description */}
         <div className="max-w-4xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed text-justify">
             Empower your team with our Corporate Training Programs in Embedded Mobility and Embedded Automotive Systems. 
             Gain hands-on expertise in Device Driver Development using advanced ARM Cortex processors, Real-Time Task Scheduling 
             with FreeRTOS, Communication Protocol Design, and AI Model Development with Hardware Deployment.
