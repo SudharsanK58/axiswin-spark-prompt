@@ -24,7 +24,7 @@ const Navbar = () => {
               alt="Axiswin Technologies Logo" 
               className="h-[125px] w-[125px] object-contain"
             />
-            <h1 className="text-4xl font-extrabold bg-gradient-hero bg-clip-text text-transparent">
+            <h1 className="text-[2rem] font-extrabold bg-gradient-hero bg-clip-text text-transparent leading-tight">
               Axiswin Technologies
             </h1>
           </div>
