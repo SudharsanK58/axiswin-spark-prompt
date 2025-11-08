@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import trainingHandsOn from "@/assets/training-hands-on.jpg";
 import trainingClassroom from "@/assets/training-classroom.jpg";
+import trainingWorkshop from "@/assets/training-workshop.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -19,6 +20,10 @@ const Training = () => {
     {
       src: trainingClassroom,
       alt: "Academic classroom training sessions for students"
+    },
+    {
+      src: trainingWorkshop,
+      alt: "Students learning embedded systems programming in workshop"
     }
   ];
 
@@ -56,7 +61,7 @@ const Training = () => {
                     <img 
                       src={image.src} 
                       alt={image.alt}
-                      className="w-full h-[500px] object-cover"
+                      className="w-full h-[400px] md:h-[500px] object-cover"
                     />
                   </div>
                 </CarouselItem>
