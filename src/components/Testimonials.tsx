@@ -14,32 +14,12 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-const initialTestimonials = [
-  {
-    name: "Dr. Rajesh Kumar",
-    position: "Head of Department",
-    company: "Sri Eshwar College of Engineering",
-    testimonial: "Axiswin Technologies provided exceptional training in embedded systems. Their expertise and hands-on approach significantly enhanced our students' practical knowledge."
-  },
-  {
-    name: "Priya Sharma",
-    position: "Training Coordinator",
-    company: "Sri Shakthi Institute of Engineering and Technology",
-    testimonial: "The IoT solutions workshop was outstanding. Our faculty and students gained invaluable insights into real-world applications of embedded technology."
-  },
-  {
-    name: "Arun Menon",
-    position: "Engineering Manager",
-    company: "Bosch Global Software Technologies",
-    testimonial: "Their custom embedded solutions perfectly met our requirements. The team's technical proficiency and commitment to quality are impressive."
-  },
-  {
-    name: "Meera Patel",
-    position: "Product Lead",
-    company: "Vitesco Technologies",
-    testimonial: "Axiswin delivered an innovative edge AI solution that exceeded our expectations. Their expertise in embedded systems is world-class."
-  }
-];
+const initialTestimonials: Array<{
+  name: string;
+  position: string;
+  company: string;
+  testimonial: string;
+}> = [];
 
 const Testimonials = () => {
   const { toast } = useToast();
