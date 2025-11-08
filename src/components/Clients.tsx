@@ -1,18 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, GraduationCap } from "lucide-react";
 
-const academicClients = [
-  "Sri Eshwar College of Engineering, Coimbatore",
-  "SRI SHAKTHI INSTITUTE OF ENGINEERING AND TECHNOLOGY",
-  "Coimbatore Institute for Engineering and Technology",
-  "Mahendra Engineering College"
-];
-
 const corporateClients = [
   "Bosch Global Software Technologies",
   "UNO Minda",
   "Vitesco Technologies",
   "Accenture"
+];
+
+const academicClients = [
+  "Sri Eshwar College of Engineering, Coimbatore",
+  "Sri Shakthi Institute of Engineering and Technology",
+  "Coimbatore Institute for Engineering and Technology",
+  "Mahendra Engineering College"
 ];
 
 const Clients = () => {
@@ -33,12 +33,12 @@ const Clients = () => {
             <CardContent className="pt-8">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-lg bg-gradient-hero flex items-center justify-center shadow-glow">
-                  <GraduationCap className="h-6 w-6 text-primary-foreground" />
+                  <Building2 className="h-6 w-6 text-primary-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold">Academic Institutions</h3>
+                <h3 className="text-2xl font-bold">Industry Partners</h3>
               </div>
               <ul className="space-y-3">
-                {academicClients.map((client, index) => (
+                {corporateClients.map((client, index) => (
                   <li 
                     key={index}
                     className="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-smooth"
@@ -55,12 +55,12 @@ const Clients = () => {
             <CardContent className="pt-8">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-lg bg-gradient-hero flex items-center justify-center shadow-glow">
-                  <Building2 className="h-6 w-6 text-primary-foreground" />
+                  <GraduationCap className="h-6 w-6 text-primary-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold">Corporate Partners</h3>
+                <h3 className="text-2xl font-bold">Academic Institutions</h3>
               </div>
               <ul className="space-y-3">
-                {corporateClients.map((client, index) => (
+                {academicClients.map((client, index) => (
                   <li 
                     key={index}
                     className="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-smooth"
