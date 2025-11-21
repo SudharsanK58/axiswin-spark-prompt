@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import trainingHandsOn from "@/assets/training-hands-on.jpg";
 import trainingClassroom from "@/assets/training-classroom.jpg";
 import trainingWorkshop from "@/assets/training-workshop.jpg";
+import trainingClassroomReal from "@/assets/training-classroom-real.jpg";
+import trainingAcademic from "@/assets/training-academic.jpg";
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
@@ -24,6 +27,14 @@ const Training = () => {
     {
       src: trainingWorkshop,
       alt: "Students learning embedded systems programming in workshop"
+    },
+    {
+      src: trainingClassroomReal,
+      alt: "Professional training session with projector and live demonstration"
+    },
+    {
+      src: trainingAcademic,
+      alt: "Students attending academic training in computer lab"
     }
   ];
 
@@ -52,6 +63,11 @@ const Training = () => {
               align: "start",
               loop: true,
             }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+              })
+            ]}
             className="w-full"
           >
             <CarouselContent>
