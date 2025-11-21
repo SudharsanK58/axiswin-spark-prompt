@@ -1,7 +1,6 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.gif";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,12 +17,7 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <img 
-              src={logo} 
-              alt="Axiswin Technologies Logo" 
-              className="h-12 w-12 object-contain"
-            />
+          <div className="flex items-center space-x-2">
             <h1 className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
               Axiswin Technologies
             </h1>
