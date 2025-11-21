@@ -17,10 +17,10 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               About <span className="bg-gradient-hero bg-clip-text text-transparent">Axiswin</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-foreground mb-6 text-justify">
               Axiswin Technologies, a division of KS Consultancy, specializes in embedded product development, IoT solutions, and AI-powered edge computing. We transform innovative ideas into market-ready products.
             </p>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-muted-foreground mb-8 text-justify">
               With deep expertise in embedded systems and a passion for innovation, we partner with businesses and academic institutions to deliver solutions that drive digital transformation.
             </p>
             <div className="space-y-4">
@@ -40,19 +40,19 @@ const About = () => {
                 <div className="space-y-6">
                   <div>
                     <h4 className="font-semibold text-lg mb-2 text-primary">Innovation-Driven</h4>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-justify">
                       We stay ahead of technology trends, bringing the latest in IoT and AI to your projects.
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-2 text-primary">Quality Focused</h4>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-justify">
                       Every solution is built with rigorous testing and quality assurance standards.
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg mb-2 text-primary">Client Success</h4>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground text-justify">
                       Your success is our mission. We partner closely to ensure project objectives are exceeded.
                     </p>
                   </div>

@@ -1,9 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import logo from "@/assets/logo.gif";
-import trainingClassroom from "@/assets/training-classroom-real.jpg";
+import trainingClassroomReal from "@/assets/training-classroom-real.jpg";
+import trainingAcademic from "@/assets/training-academic.jpg";
+import trainingWorkshop from "@/assets/training-workshop.jpg";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Training = () => {
+  const trainingImages = [
+    {
+      src: trainingClassroomReal,
+      alt: "Professional corporate training session with live demonstration and projector"
+    },
+    {
+      src: trainingAcademic,
+      alt: "Students attending hands-on academic training in computer lab"
+    },
+    {
+      src: trainingWorkshop,
+      alt: "Practical workshop training with students learning embedded systems"
+    }
+  ];
+
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -18,29 +42,49 @@ const Training = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Corporate & <span className="bg-gradient-hero bg-clip-text text-transparent">Academic Training</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-justify">
             Comprehensive hands-on training programs designed to upskill your team in embedded systems, IoT, and AI technologies
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 items-center">
-          {/* Logo */}
-          <div className="flex justify-center lg:justify-start animate-fade-in">
-            <img 
-              src={logo} 
-              alt="Axiswin Technologies Logo"
-              className="w-64 h-64 object-contain"
-            />
-          </div>
+        <div className="mb-12 max-w-4xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+              })
+            ]}
+            className="w-full"
+          >
+            <CarouselContent>
+              {trainingImages.map((image, index) => (
+                <CarouselItem key={index}>
+                  <div className="relative overflow-hidden rounded-2xl shadow-elegant">
+                    <img 
+                      src={image.src} 
+                      alt={image.alt}
+                      className="w-full h-[400px] md:h-[500px] object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
+        </div>
 
-          {/* Training Photo */}
-          <div className="relative overflow-hidden rounded-2xl shadow-elegant animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <img 
-              src={trainingClassroom} 
-              alt="Corporate and academic training sessions at Axiswin Technologies"
-              className="w-full h-full object-cover"
-            />
-          </div>
+        {/* Training Description */}
+        <div className="max-w-4xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+            Empower your team with our Corporate Training Programs in Embedded Mobility and Embedded Automotive Systems. 
+            Gain hands-on expertise in Device Driver Development using advanced ARM Cortex processors, Real-Time Task Scheduling 
+            with FreeRTOS, Communication Protocol Design, and AI Model Development with Hardware Deployment.
+          </p>
         </div>
 
         {/* Training Features */}
