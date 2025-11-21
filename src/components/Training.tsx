@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import trainingClassroomReal from "@/assets/training-classroom-real.jpg";
-import trainingAcademic from "@/assets/training-academic.jpg";
-import trainingWorkshop from "@/assets/training-workshop.jpg";
-import trainingHandsOnLab from "@/assets/training-hands-on-lab.jpg";
-import trainingClassroomSession from "@/assets/training-classroom-session.jpg";
+import training1 from "@/assets/training-1.jpg";
+import training2 from "@/assets/training-2.jpg";
+import training3 from "@/assets/training-3.jpg";
+import training4 from "@/assets/training-4.jpg";
+import training5 from "@/assets/training-5.jpg";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -17,24 +17,24 @@ import {
 const Training = () => {
   const trainingImages = [
     {
-      src: trainingClassroomReal,
-      alt: "Professional corporate training session with live demonstration and projector"
+      src: training1,
+      alt: "Professional classroom training session with instructor and students"
     },
     {
-      src: trainingAcademic,
-      alt: "Students attending hands-on academic training in computer lab"
-    },
-    {
-      src: trainingWorkshop,
-      alt: "Practical workshop training with students learning embedded systems"
-    },
-    {
-      src: trainingHandsOnLab,
+      src: training2,
       alt: "Hands-on embedded systems training with ARM Cortex processors and IoT devices"
     },
     {
-      src: trainingClassroomSession,
-      alt: "Interactive classroom training session with students learning embedded systems"
+      src: training3,
+      alt: "Students attending practical training in computer lab with hands-on embedded systems"
+    },
+    {
+      src: training4,
+      alt: "Corporate training session with live demonstration and projector presentation"
+    },
+    {
+      src: training5,
+      alt: "Students working on embedded systems projects with ARM processors and development boards"
     }
   ];
 
