@@ -3,6 +3,8 @@ import { ArrowRight } from "lucide-react";
 import trainingClassroomReal from "@/assets/training-classroom-real.jpg";
 import trainingAcademic from "@/assets/training-academic.jpg";
 import trainingWorkshop from "@/assets/training-workshop.jpg";
+import trainingHandsOnLab from "@/assets/training-hands-on-lab.jpg";
+import trainingClassroomSession from "@/assets/training-classroom-session.jpg";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -25,6 +27,14 @@ const Training = () => {
     {
       src: trainingWorkshop,
       alt: "Practical workshop training with students learning embedded systems"
+    },
+    {
+      src: trainingHandsOnLab,
+      alt: "Hands-on embedded systems training with ARM Cortex processors and IoT devices"
+    },
+    {
+      src: trainingClassroomSession,
+      alt: "Interactive classroom training session with students learning embedded systems"
     }
   ];
 
