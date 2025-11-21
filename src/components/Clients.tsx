@@ -37,17 +37,19 @@ const Clients = () => {
                 </div>
                 <h3 className="text-2xl font-bold">Industry Partners</h3>
               </div>
-              <ul className="space-y-3">
-                {corporateClients.map((client, index) => (
-                  <li 
-                    key={index}
-                    className="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-smooth"
-                  >
-                    <span className="text-primary mt-1">•</span>
-                    <span className="text-justify">{client}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="relative overflow-hidden h-[200px]">
+                <div className="animate-scroll-vertical space-y-3">
+                  {[...corporateClients, ...corporateClients].map((client, index) => (
+                    <div 
+                      key={index}
+                      className="flex items-start gap-3 text-muted-foreground py-2"
+                    >
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-justify">{client}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </CardContent>
           </Card>
 
@@ -59,17 +61,19 @@ const Clients = () => {
                 </div>
                 <h3 className="text-2xl font-bold">Academic Institutions</h3>
               </div>
-              <ul className="space-y-3">
-                {academicClients.map((client, index) => (
-                  <li 
-                    key={index}
-                    className="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-smooth"
-                  >
-                    <span className="text-primary mt-1">•</span>
-                    <span className="text-justify">{client}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="relative overflow-hidden h-[200px]">
+                <div className="animate-scroll-vertical space-y-3">
+                  {[...academicClients, ...academicClients].map((client, index) => (
+                    <div 
+                      key={index}
+                      className="flex items-start gap-3 text-muted-foreground py-2"
+                    >
+                      <span className="text-primary mt-1">•</span>
+                      <span className="text-justify">{client}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
