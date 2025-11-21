@@ -7,7 +7,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent">
               Axiswin Technologies
             </h3>
-            <p className="text-secondary-foreground/80 text-justify">
+            <p className="text-secondary-foreground/80">
               Engineering innovative embedded systems and IoT solutions for a smarter tomorrow.
             </p>
           </div>

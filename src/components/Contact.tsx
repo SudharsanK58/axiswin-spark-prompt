@@ -33,7 +33,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Get in <span className="bg-gradient-hero bg-clip-text text-transparent">Touch</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-justify">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Ready to transform your ideas into innovative solutions? Let's discuss your project.
           </p>
         </div>
@@ -65,7 +65,7 @@ const Contact = () => {
         <div className="text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Card className="max-w-2xl mx-auto border-primary/20 shadow-elegant">
             <CardContent className="pt-6">
-              <p className="text-lg mb-6 text-muted-foreground text-justify">
+              <p className="text-lg mb-6 text-muted-foreground">
                 Whether you need embedded systems development, IoT solutions, or specialized training, 
                 we're here to help bring your vision to life.
               </p>

@@ -29,7 +29,7 @@ const Products = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Our <span className="bg-gradient-hero bg-clip-text text-transparent">Products</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-justify">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Cutting-edge embedded systems and IoT solutions designed for real-world applications
           </p>
         </div>

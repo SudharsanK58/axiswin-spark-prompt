@@ -32,7 +32,7 @@ const Services = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Our <span className="bg-gradient-hero bg-clip-text text-transparent">Services</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-justify">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Comprehensive technology solutions tailored to your innovation needs
           </p>
         </div>
