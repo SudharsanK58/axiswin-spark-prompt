@@ -99,119 +99,68 @@ const Training = () => {
           </p>
         </div>
 
-        {/* Corporate Training Section */}
-        <div className="max-w-4xl mx-auto mb-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <div className="bg-card border border-border rounded-2xl p-8 shadow-elegant">
-            <h3 className="text-2xl font-bold mb-4">Corporate Training Delivered</h3>
-            <p className="text-lg text-muted-foreground mb-6 text-justify">
-              Our CTO-led programs have been delivered to engineering teams at:
-            </p>
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Bosch Global Software Technologies</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">UNO Minda</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Vitesco Technologies</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Accenture</span>
-              </li>
-            </ul>
-            
-            <h4 className="text-xl font-bold mb-4">Core Topics Covered</h4>
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Embedded Software & RTOS</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Automotive Communication Protocols (CAN, LIN, UDS)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">EV Architecture & Control Systems</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">ECU Diagnostics, Calibration & Integration</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Functional Safety Fundamentals</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Hardware Testing & Validation</span>
-              </li>
-            </ul>
-            
-            <p className="text-lg text-muted-foreground text-justify">
-              Our corporate training equips engineering teams to build solutions for next-generation mobility.
-            </p>
-          </div>
-        </div>
+        {/* Corporate & Academic Training - Side by Side */}
+        <div className="max-w-6xl mx-auto mb-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Corporate Training Section */}
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-elegant">
+              <h3 className="text-2xl font-bold mb-4">Corporate Training Delivered</h3>
+              <p className="text-lg text-muted-foreground mb-6 text-justify">
+                Our CTO-led programs have been delivered to engineering teams at:
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-muted-foreground">Bosch Global Software Technologies</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-muted-foreground">UNO Minda</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-muted-foreground">Vitesco Technologies</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-muted-foreground">Accenture</span>
+                </li>
+              </ul>
+              
+              <p className="text-lg text-muted-foreground text-justify">
+                Our corporate training equips engineering teams to build solutions for next-generation mobility.
+              </p>
+            </div>
 
-        {/* Academic Training Section */}
-        <div className="max-w-4xl mx-auto mb-16 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <div className="bg-card border border-border rounded-2xl p-8 shadow-elegant">
-            <h3 className="text-2xl font-bold mb-4">Academic Training Delivered</h3>
-            <p className="text-lg text-muted-foreground mb-6 text-justify">
-              We collaborate with leading institutions to deliver skill-oriented engineering training:
-            </p>
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Sri Eshwar College of Engineering, Coimbatore</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Sri Shakthi Institute of Engineering and Technology</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Coimbatore Institute of Engineering and Technology</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Mahendra Engineering College</span>
-              </li>
-            </ul>
-            
-            <h4 className="text-xl font-bold mb-4">Student Focused Learning</h4>
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Microcontroller Programming & Embedded Systems</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Sensor Interfacing & Automotive Application Labs</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">EV Powertrain Essentials & BMS Basics</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Circuit Simulation & Automotive Electronics</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Real-time Projects & Guided Hands-On Sessions</span>
-              </li>
-            </ul>
-            
-            <p className="text-lg text-muted-foreground text-justify">
-              These programs build industry readiness, enabling students to understand real product challenges and engineering workflows.
-            </p>
+            {/* Academic Training Section */}
+            <div className="bg-card border border-border rounded-2xl p-8 shadow-elegant">
+              <h3 className="text-2xl font-bold mb-4">Academic Training Delivered</h3>
+              <p className="text-lg text-muted-foreground mb-6 text-justify">
+                We collaborate with leading institutions to deliver skill-oriented engineering training:
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-muted-foreground">Sri Eshwar College of Engineering, Coimbatore</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-muted-foreground">Sri Shakthi Institute of Engineering and Technology</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-muted-foreground">Coimbatore Institute of Engineering and Technology</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1">•</span>
+                  <span className="text-muted-foreground">Mahendra Engineering College</span>
+                </li>
+              </ul>
+              
+              <p className="text-lg text-muted-foreground text-justify">
+                These programs build industry readiness, enabling students to understand real product challenges and engineering workflows.
+              </p>
+            </div>
           </div>
         </div>
 
