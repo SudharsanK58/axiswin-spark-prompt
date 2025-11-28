@@ -167,33 +167,144 @@ const Training = () => {
         {/* CTO Leadership Section */}
         <div className="max-w-4xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.5s' }}>
           <div className="bg-gradient-hero/10 border border-primary/20 rounded-2xl p-8 shadow-elegant">
-            <h3 className="text-2xl font-bold mb-4 text-center">Led by Our Chief Technology Officer</h3>
+            <h3 className="text-2xl font-bold mb-4 text-center">Training Led by Our Chief Technology Officer</h3>
             <p className="text-lg text-muted-foreground mb-4 text-justify">
               All major training engagements are delivered by our CTO, ensuring:
             </p>
-            <ul className="space-y-3">
+            <ul className="space-y-3 mb-6">
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">•</span>
                 <span className="text-muted-foreground">Industry-grade technical depth</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Practical insights from mobility & embedded domains</span>
+                <span className="text-muted-foreground">Practical insights from embedded and mobility domains</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">•</span>
-                <span className="text-muted-foreground">Hands-on engagement with real hardware & simulation tools</span>
+                <span className="text-muted-foreground">Hands-on engagement with real hardware and simulation tools</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">•</span>
                 <span className="text-muted-foreground">Outcome-driven learning and skill development</span>
               </li>
             </ul>
+            <p className="text-lg text-muted-foreground text-justify">
+              We offer corporate training programs focused on Embedded Mobility and Embedded Automotive Systems. 
+              Our sessions are designed to equip engineering teams with the skills required to build reliable, production-ready embedded solutions.
+            </p>
+          </div>
+        </div>
+
+        {/* Core Areas Covered - Two Column Layout */}
+        <div className="max-w-6xl mx-auto mb-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <h3 className="text-3xl font-bold mb-8 text-center">Core Areas Covered</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Left Column */}
+            <div className="space-y-8">
+              {/* Embedded Linux & Device Drivers */}
+              <div className="bg-card border border-border rounded-xl p-6 shadow-elegant">
+                <h4 className="text-xl font-bold mb-3 text-primary">Embedded Linux & Device Drivers</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Device Driver development for advanced ARM Cortex-based processors</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Peripheral control, memory access, and interrupt management</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Hardware abstraction and low-level driver interfaces</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Real-Time Systems Engineering */}
+              <div className="bg-card border border-border rounded-xl p-6 shadow-elegant">
+                <h4 className="text-xl font-bold mb-3 text-primary">Real-Time Systems Engineering</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">FreeRTOS task scheduling and execution models</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Multithreading, queues, semaphores, latency control</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Performance tuning for real-time embedded applications</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Automotive Communication Protocols */}
+              <div className="bg-card border border-border rounded-xl p-6 shadow-elegant">
+                <h4 className="text-xl font-bold mb-3 text-primary">Automotive Communication Protocols</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">CAN, LIN, UART, SPI, I2C</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">UDS and ISO-14229 diagnostic services</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">ECU communication and calibration workflows</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className="space-y-8">
+              {/* Bare-Metal Embedded Development */}
+              <div className="bg-card border border-border rounded-xl p-6 shadow-elegant">
+                <h4 className="text-xl font-bold mb-3 text-primary">Bare-Metal Embedded Development</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Clean architecture without OS layers</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Bootloader fundamentals and startup assembly routines</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Resource-optimized firmware for Cortex controllers</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Edge AI Integration */}
+              <div className="bg-card border border-border rounded-xl p-6 shadow-elegant">
+                <h4 className="text-xl font-bold mb-3 text-primary">Edge AI Integration</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Embedded inference on constrained hardware</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">AI/ML model deployment on microcontrollers</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">•</span>
+                    <span className="text-muted-foreground">Sensor-led decision engines and mobility applications</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* CTA Button */}
-        <div className="text-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        <div className="text-center animate-fade-in" style={{ animationDelay: '0.7s' }}>
           <Button 
             onClick={scrollToContact}
             variant="hero" 
