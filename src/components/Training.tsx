@@ -88,47 +88,172 @@ const Training = () => {
           </Carousel>
         </div>
 
-        {/* Training Description */}
-        <div className="max-w-4xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        {/* Training Overview */}
+        <div className="max-w-4xl mx-auto mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <h3 className="text-2xl font-bold mb-4 text-center">Training Delivered to Industry Leaders & Academic Institutions</h3>
+          <p className="text-lg text-muted-foreground leading-relaxed text-justify mb-4">
+            We provide advanced technical training in Embedded Systems, Automotive Electronics, and Mobility Engineering.
+          </p>
           <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-            Empower your team with our Corporate Training Programs in Embedded Mobility and Embedded Automotive Systems. 
-            Gain hands-on expertise in Device Driver Development using advanced ARM Cortex processors, Real-Time Task Scheduling 
-            with FreeRTOS, Communication Protocol Design, and AI Model Development with Hardware Deployment.
+            All programs are curated and delivered by our Chief Technology Officer, combining technical depth with real-world project experience.
           </p>
         </div>
 
-        {/* Training Features */}
-        <div className="bg-card border border-border rounded-2xl p-8 shadow-elegant animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
-              <p className="text-muted-foreground">Professionals Trained</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
-              <p className="text-muted-foreground">Corporate Clients</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">20+</div>
-              <p className="text-muted-foreground">Academic Partners</p>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">95%</div>
-              <p className="text-muted-foreground">Satisfaction Rate</p>
-            </div>
+        {/* Corporate Training Section */}
+        <div className="max-w-4xl mx-auto mb-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="bg-card border border-border rounded-2xl p-8 shadow-elegant">
+            <h3 className="text-2xl font-bold mb-4">Corporate Training Delivered</h3>
+            <p className="text-lg text-muted-foreground mb-6 text-justify">
+              Our CTO-led programs have been delivered to engineering teams at:
+            </p>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Bosch Global Software Technologies</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">UNO Minda</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Vitesco Technologies</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Accenture</span>
+              </li>
+            </ul>
+            
+            <h4 className="text-xl font-bold mb-4">Core Topics Covered</h4>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Embedded Software & RTOS</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Automotive Communication Protocols (CAN, LIN, UDS)</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">EV Architecture & Control Systems</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">ECU Diagnostics, Calibration & Integration</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Functional Safety Fundamentals</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Hardware Testing & Validation</span>
+              </li>
+            </ul>
+            
+            <p className="text-lg text-muted-foreground text-justify">
+              Our corporate training equips engineering teams to build solutions for next-generation mobility.
+            </p>
           </div>
-          
-          <div className="text-center">
-            <Button 
-              onClick={scrollToContact}
-              variant="hero" 
-              size="lg"
-              className="group"
-            >
-              Schedule Training Program
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
-            </Button>
+        </div>
+
+        {/* Academic Training Section */}
+        <div className="max-w-4xl mx-auto mb-16 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="bg-card border border-border rounded-2xl p-8 shadow-elegant">
+            <h3 className="text-2xl font-bold mb-4">Academic Training Delivered</h3>
+            <p className="text-lg text-muted-foreground mb-6 text-justify">
+              We collaborate with leading institutions to deliver skill-oriented engineering training:
+            </p>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Sri Eshwar College of Engineering, Coimbatore</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Sri Shakthi Institute of Engineering and Technology</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Coimbatore Institute of Engineering and Technology</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Mahendra Engineering College</span>
+              </li>
+            </ul>
+            
+            <h4 className="text-xl font-bold mb-4">Student Focused Learning</h4>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Microcontroller Programming & Embedded Systems</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Sensor Interfacing & Automotive Application Labs</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">EV Powertrain Essentials & BMS Basics</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Circuit Simulation & Automotive Electronics</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Real-time Projects & Guided Hands-On Sessions</span>
+              </li>
+            </ul>
+            
+            <p className="text-lg text-muted-foreground text-justify">
+              These programs build industry readiness, enabling students to understand real product challenges and engineering workflows.
+            </p>
           </div>
+        </div>
+
+        {/* CTO Leadership Section */}
+        <div className="max-w-4xl mx-auto mb-12 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+          <div className="bg-gradient-hero/10 border border-primary/20 rounded-2xl p-8 shadow-elegant">
+            <h3 className="text-2xl font-bold mb-4 text-center">Led by Our Chief Technology Officer</h3>
+            <p className="text-lg text-muted-foreground mb-4 text-justify">
+              All major training engagements are delivered by our CTO, ensuring:
+            </p>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Industry-grade technical depth</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Practical insights from mobility & embedded domains</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Hands-on engagement with real hardware & simulation tools</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1">•</span>
+                <span className="text-muted-foreground">Outcome-driven learning and skill development</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <Button 
+            onClick={scrollToContact}
+            variant="hero" 
+            size="lg"
+            className="group"
+          >
+            Schedule Training Program
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
+          </Button>
         </div>
       </div>
     </section>
