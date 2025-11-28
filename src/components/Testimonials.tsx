@@ -13,6 +13,14 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const initialTestimonials: Array<{
   name: string;
@@ -79,27 +87,42 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mb-8">
-          {testimonials.map((testimonial, index) => (
-            <Card 
-              key={index}
-              className="border-primary/20 hover:shadow-elegant transition-smooth animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CardContent className="pt-6">
-                <Quote className="h-8 w-8 text-primary/30 mb-4" />
-                <p className="text-muted-foreground mb-6 text-justify italic">
-                  "{testimonial.testimonial}"
-                </p>
-                <div className="border-t border-border pt-4">
-                  <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.position}</p>
-                  <p className="text-sm text-primary">{testimonial.company}</p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        {testimonials.length > 0 && (
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+              }),
+            ]}
+            className="w-full max-w-6xl mx-auto mb-8"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                  <Card className="border-primary/20 hover:shadow-elegant transition-smooth h-full">
+                    <CardContent className="pt-6">
+                      <Quote className="h-8 w-8 text-primary/30 mb-4" />
+                      <p className="text-muted-foreground mb-6 text-justify italic">
+                        "{testimonial.testimonial}"
+                      </p>
+                      <div className="border-t border-border pt-4">
+                        <p className="font-semibold text-foreground">{testimonial.name}</p>
+                        <p className="text-sm text-muted-foreground">{testimonial.position}</p>
+                        <p className="text-sm text-primary">{testimonial.company}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        )}
 
         <div className="text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
