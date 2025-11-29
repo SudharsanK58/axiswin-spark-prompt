@@ -88,17 +88,6 @@ const Training = () => {
           </Carousel>
         </div>
 
-        {/* Training Overview */}
-        <div className="max-w-4xl mx-auto mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <h3 className="text-2xl font-bold mb-4 text-center">Training Delivered to Industry Leaders & Academic Institutions</h3>
-          <p className="text-lg text-muted-foreground leading-relaxed text-justify mb-4">
-            We provide advanced technical training in Embedded Systems, Automotive Electronics, and Mobility Engineering.
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed text-justify">
-            All programs are curated and delivered by our Chief Technology Officer, combining technical depth with real-world project experience.
-          </p>
-        </div>
-
         {/* Corporate & Academic Training - Side by Side */}
         <div className="max-w-6xl mx-auto mb-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <div className="grid md:grid-cols-2 gap-8">
