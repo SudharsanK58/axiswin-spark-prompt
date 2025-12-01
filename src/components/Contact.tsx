@@ -21,7 +21,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: ["ksconsultancycbe@gmail.com"]
+    details: ["cto@axiswintech.com", "hr@axiswintech.com"]
   }
 ];
 
@@ -72,7 +72,7 @@ const Contact = () => {
               <Button 
                 variant="hero" 
                 size="lg"
-                onClick={() => window.location.href = 'mailto:ksconsultancycbe@gmail.com'}
+                onClick={() => window.location.href = 'mailto:cto@axiswintech.com,hr@axiswintech.com'}
               >
                 <Mail className="mr-2 h-5 w-5" />
                 Send Us an Email
