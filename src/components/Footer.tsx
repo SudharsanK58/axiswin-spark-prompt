@@ -26,7 +26,8 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-secondary-foreground/80">
               <li>+91-7845492448</li>
-              <li>ksconsultancycbe@gmail.com</li>
+              <li>cto@axiswintech.com</li>
+              <li>hr@axiswintech.com</li>
               <li>Coimbatore – 641110</li>
             </ul>
           </div>
