@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(copy \"d:\\axiswin-spark-prompt\\src\\assets\\logo.gif\" \"d:\\axiswin-spark-prompt\\public\\favicon.gif\")",
+      "Bash(cp:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
